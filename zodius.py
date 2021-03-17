@@ -43,11 +43,21 @@ async def badsite(ctx):
 
 @bot.command()
 async def motherboard(ctx):
-    await ctx.send(topo_motherboard1 + topo_motherboard2 + topo_motherboard3)
+    embed = discord.Embed(title = "C'est quoi une carte mère ?", colour = discord.Colour.blue())
+    embed.add_field(name = "La carte mère", value = topo_motherboard1)
+    await ctx.send(embed=embed)
+
+@bot.command()
+async def motherboard2(ctx):
+    embed = discord.Embed(title =  "C'est quoi une carte mère ?", colour = discord.Colour.blue())
+    embed.add_field(name = "Les sockets et Chipsets", value = topo_motherboard2 + topo_motherboard3)
+    await ctx.send(embed = embed)
 
 @bot.command()
 async def mbintel(ctx):
-    await ctx.send(topo_motherboardintel + topo_motherboardintel2)
+    embed = discord.Embed(title = "Précisions carte mères Intel", colour = discord.Colour.blue())
+    embed.add_field(name = "Sockets Intel", value = topo_motherboardintel + topo_motherboardintel2)
+    await ctx.send(embed = embed)
 
 @bot.command()
 async def perfcpu(ctx):
