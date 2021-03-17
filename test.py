@@ -89,4 +89,4 @@ topo_motherboardintel2 = "-Intel 10th Comet Lake-S et 11th Rocket Lake (Exemple=
 
 
 
-bot.run("ODIxMDI3MzQ1NTk0NTgwOTk0.YE9vTQ.bjrkZI6GuOW1Tq4YD-f_YXCdJrE")
+bot.run()
