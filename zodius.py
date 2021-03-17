@@ -20,7 +20,7 @@ async def on_ready():
 async def who(ctx) :
     await ctx.send("Bonjour à toi, je suis Zodius, un bot pour aider les Helpeurs de serveurs Hardware")
 
-#C:\Bot_discord\test.py
+#C:\Bot_discord\zodius.py
 @bot.command()
 async def config1(ctx):
     await ctx.send("Voici une liste de configurations pc à divers prix !" + " " + urlconfig)
